@@ -3,7 +3,7 @@
 namespace DummyNamespace;
 
 use DummyModel;
-use Yajra\Datatables\Services\DataTable;
+use Boparaiamrit\Datatables\Services\DataTable;
 
 class DummyClass extends DataTable
 {
@@ -35,7 +35,7 @@ class DummyClass extends DataTable
     /**
      * Optional method if you want to use html builder.
      *
-     * @return \Yajra\Datatables\Html\Builder
+     * @return \Boparaiamrit\Datatables\Html\Builder
      */
     public function html()
     {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Yajra\Datatables\Processors;
+namespace Boparaiamrit\Datatables\Processors;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Config;
-use Yajra\Datatables\Helper;
+use Boparaiamrit\Datatables\Helper;
 
 /**
  * Class DataProcessor.
  *
- * @package Yajra\Datatables
+ * @package Boparaiamrit\Datatables
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 class DataProcessor

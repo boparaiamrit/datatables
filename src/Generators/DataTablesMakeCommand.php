@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Datatables\Generators;
+namespace Boparaiamrit\Datatables\Generators;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -9,7 +9,7 @@ use Symfony\Component\Console\Input\InputOption;
 /**
  * Class DataTablesMakeCommand.
  *
- * @package Yajra\Datatables\Generators
+ * @package Boparaiamrit\Datatables\Generators
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 class DataTablesMakeCommand extends GeneratorCommand

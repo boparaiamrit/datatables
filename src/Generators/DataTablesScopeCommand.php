@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\Datatables\Generators;
+namespace Boparaiamrit\Datatables\Generators;
 
 use Illuminate\Console\GeneratorCommand;
 
 /**
  * Class DataTablesScopeCommand.
  *
- * @package Yajra\Datatables\Generators
+ * @package Boparaiamrit\Datatables\Generators
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 class DataTablesScopeCommand extends GeneratorCommand

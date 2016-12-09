@@ -1,11 +1,11 @@
 <?php
 
-namespace Yajra\Datatables\Contracts;
+namespace Boparaiamrit\Datatables\Contracts;
 
 /**
  * Interface DataTableButtonsContract.
  *
- * @package Yajra\Datatables\Contracts
+ * @package Boparaiamrit\Datatables\Contracts
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 interface DataTableButtonsContract

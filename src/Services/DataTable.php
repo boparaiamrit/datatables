@@ -1,27 +1,27 @@
 <?php
 
-namespace Yajra\Datatables\Services;
+namespace Boparaiamrit\Datatables\Services;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Facades\Config;
 use Maatwebsite\Excel\Classes\LaravelExcelWorksheet;
 use Maatwebsite\Excel\Writers\LaravelExcelWriter;
-use Yajra\Datatables\Contracts\DataTableButtonsContract;
-use Yajra\Datatables\Contracts\DataTableContract;
-use Yajra\Datatables\Contracts\DataTableScopeContract;
-use Yajra\Datatables\Datatables;
-use Yajra\Datatables\Transformers\DataTransformer;
+use Boparaiamrit\Datatables\Contracts\DataTableButtonsContract;
+use Boparaiamrit\Datatables\Contracts\DataTableContract;
+use Boparaiamrit\Datatables\Contracts\DataTableScopeContract;
+use Boparaiamrit\Datatables\Datatables;
+use Boparaiamrit\Datatables\Transformers\DataTransformer;
 
 /**
  * Class DataTable.
  *
- * @package Yajra\Datatables\Services
+ * @package Boparaiamrit\Datatables\Services
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 abstract class DataTable implements DataTableContract, DataTableButtonsContract
 {
     /**
-     * @var \Yajra\Datatables\Datatables
+     * @var \Boparaiamrit\Datatables\Datatables
      */
     protected $datatables;
 
@@ -54,7 +54,7 @@ abstract class DataTable implements DataTableContract, DataTableButtonsContract
     /**
      * Query scopes.
      *
-     * @var \Yajra\Datatables\Contracts\DataTableScopeContract[]
+     * @var \Boparaiamrit\Datatables\Contracts\DataTableScopeContract[]
      */
     protected $scopes = [];
 
@@ -68,7 +68,7 @@ abstract class DataTable implements DataTableContract, DataTableButtonsContract
     /**
      * DataTable constructor.
      *
-     * @param \Yajra\Datatables\Datatables $datatables
+     * @param \Boparaiamrit\Datatables\Datatables $datatables
      * @param \Illuminate\Contracts\View\Factory $viewFactory
      */
     public function __construct(Datatables $datatables, Factory $viewFactory)
@@ -105,7 +105,7 @@ abstract class DataTable implements DataTableContract, DataTableButtonsContract
     /**
      * Get Datatables Request instance.
      *
-     * @return \Yajra\Datatables\Request
+     * @return \Boparaiamrit\Datatables\Request
      */
     public function request()
     {
@@ -159,7 +159,7 @@ abstract class DataTable implements DataTableContract, DataTableButtonsContract
     /**
      * Optional method if you want to use html builder.
      *
-     * @return \Yajra\Datatables\Html\Builder
+     * @return \Boparaiamrit\Datatables\Html\Builder
      */
     public function html()
     {
@@ -169,7 +169,7 @@ abstract class DataTable implements DataTableContract, DataTableButtonsContract
     /**
      * Get Datatables Html Builder instance.
      *
-     * @return \Yajra\Datatables\Html\Builder
+     * @return \Boparaiamrit\Datatables\Html\Builder
      */
     public function builder()
     {
@@ -339,7 +339,7 @@ abstract class DataTable implements DataTableContract, DataTableButtonsContract
     /**
      * Add basic array query scopes.
      *
-     * @param \Yajra\Datatables\Contracts\DataTableScopeContract $scope
+     * @param \Boparaiamrit\Datatables\Contracts\DataTableScopeContract $scope
      * @return $this
      */
     public function addScope(DataTableScopeContract $scope)

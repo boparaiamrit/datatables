@@ -1,21 +1,21 @@
 <?php
 
-namespace Yajra\Datatables\Engines;
+namespace Boparaiamrit\Datatables\Engines;
 
 use Illuminate\Database\Eloquent\Builder;
-use Yajra\Datatables\Request;
+use Boparaiamrit\Datatables\Request;
 
 /**
  * Class EloquentEngine.
  *
- * @package Yajra\Datatables\Engines
+ * @package Boparaiamrit\Datatables\Engines
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 class EloquentEngine extends QueryBuilderEngine
 {
     /**
      * @param mixed $model
-     * @param \Yajra\Datatables\Request $request
+     * @param \Boparaiamrit\Datatables\Request $request
      */
     public function __construct($model, Request $request)
     {

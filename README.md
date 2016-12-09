@@ -12,7 +12,7 @@
 This package is created to handle [server-side](https://www.datatables.net/manual/server-side) works of [DataTables](http://datatables.net) jQuery Plugin via [AJAX option](https://datatables.net/reference/option/ajax) by using Eloquent ORM, Fluent Query Builder or Collection.
 
 ```php
-use Yajra\Datatables\Facades\Datatables;
+use Boparaiamrit\Datatables\Facades\Datatables;
 
 // Using Eloquent
 return Datatables::eloquent(User::query())->make(true);
@@ -43,10 +43,10 @@ return Datatables::of(User::all())->make(true);
 `composer require yajra/laravel-datatables-oracle:~6.0`
 
 #### Service Provider
-`Yajra\Datatables\DatatablesServiceProvider::class`
+`Boparaiamrit\Datatables\DatatablesServiceProvider::class`
 
 #### Facade
-`Datatables` facade is automatically registered as an alias for `Yajra\Datatables\Facades\Datatables` class. 
+`Datatables` facade is automatically registered as an alias for `Boparaiamrit\Datatables\Facades\Datatables` class. 
 
 #### Configuration and Assets
 `$ php artisan vendor:publish --tag=datatables`
@@ -54,11 +54,11 @@ return Datatables::of(User::all())->make(true);
 And that's it! Start building out some awesome DataTables!
 
 ## Upgrading from v5.x to v6.x
-  - Change all occurrences of `yajra\Datatables` to `Yajra\Datatables`. (Use Sublime's find and replace all for faster update). 
+  - Change all occurrences of `yajra\Datatables` to `Boparaiamrit\Datatables`. (Use Sublime's find and replace all for faster update). 
   - Remove `Datatables` facade registration.
-  - Temporarily comment out `Yajra\Datatables\DatatablesServiceProvider`.
+  - Temporarily comment out `Boparaiamrit\Datatables\DatatablesServiceProvider`.
   - Update package version on your composer.json and use `yajra/laravel-datatables-oracle: ~6.0`
-  - Uncomment the provider `Yajra\Datatables\DatatablesServiceProvider`. 
+  - Uncomment the provider `Boparaiamrit\Datatables\DatatablesServiceProvider`. 
 
 ## Debugging Mode
 To enable debugging mode, just set `APP_DEBUG=true` and the package will include the queries and inputs used when processing the table.

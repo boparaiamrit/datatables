@@ -2,7 +2,7 @@
 
 
 use Carbon\Carbon;
-use Yajra\Datatables\Helper;
+use Boparaiamrit\Datatables\Helper;
 
 class HelperTest extends PHPUnit_Framework_TestCase
 {

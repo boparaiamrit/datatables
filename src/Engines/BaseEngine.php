@@ -1,19 +1,19 @@
 <?php
 
-namespace Yajra\Datatables\Engines;
+namespace Boparaiamrit\Datatables\Engines;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Str;
 use League\Fractal\Resource\Collection;
-use Yajra\Datatables\Contracts\DataTableEngineContract;
-use Yajra\Datatables\Helper;
-use Yajra\Datatables\Processors\DataProcessor;
+use Boparaiamrit\Datatables\Contracts\DataTableEngineContract;
+use Boparaiamrit\Datatables\Helper;
+use Boparaiamrit\Datatables\Processors\DataProcessor;
 
 /**
  * Class BaseEngine.
  *
- * @package Yajra\Datatables\Engines
+ * @package Boparaiamrit\Datatables\Engines
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 abstract class BaseEngine implements DataTableEngineContract
@@ -21,7 +21,7 @@ abstract class BaseEngine implements DataTableEngineContract
     /**
      * Datatables Request object.
      *
-     * @var \Yajra\Datatables\Request
+     * @var \Boparaiamrit\Datatables\Request
      */
     public $request;
 

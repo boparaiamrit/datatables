@@ -1,9 +1,9 @@
 <?php
 
-use Yajra\Datatables\Datatables;
-use Yajra\Datatables\Html\Builder;
-use Yajra\Datatables\Html\Column;
-use Yajra\Datatables\Request;
+use Boparaiamrit\Datatables\Datatables;
+use Boparaiamrit\Datatables\Html\Builder;
+use Boparaiamrit\Datatables\Html\Column;
+use Boparaiamrit\Datatables\Request;
 
 require_once 'helper.php';
 
@@ -109,7 +109,7 @@ class HtmlBuilderTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return \Yajra\Datatables\Datatables
+     * @return \Boparaiamrit\Datatables\Datatables
      */
     protected function getDatatables()
     {

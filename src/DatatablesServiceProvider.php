@@ -1,19 +1,19 @@
 <?php
 
-namespace Yajra\Datatables;
+namespace Boparaiamrit\Datatables;
 
 use Collective\Html\HtmlServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use League\Fractal\Manager;
 use League\Fractal\Serializer\DataArraySerializer;
 use Maatwebsite\Excel\ExcelServiceProvider;
-use Yajra\Datatables\Generators\DataTablesMakeCommand;
-use Yajra\Datatables\Generators\DataTablesScopeCommand;
+use Boparaiamrit\Datatables\Generators\DataTablesMakeCommand;
+use Boparaiamrit\Datatables\Generators\DataTablesScopeCommand;
 
 /**
  * Class DatatablesServiceProvider.
  *
- * @package Yajra\Datatables
+ * @package Boparaiamrit\Datatables
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
 class DatatablesServiceProvider extends ServiceProvider
@@ -128,7 +128,7 @@ class DatatablesServiceProvider extends ServiceProvider
     {
         if (class_exists('Illuminate\Foundation\AliasLoader')) {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Datatables', \Yajra\Datatables\Facades\Datatables::class);
+            $loader->alias('Datatables', \Boparaiamrit\Datatables\Facades\Datatables::class);
         }
     }
 

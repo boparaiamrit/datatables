@@ -234,7 +234,7 @@
 - Available buttons are csv, excel, pdf, print.
 - Built-in support for exporting to CSV, EXCEL and PDF using Laravel-Excel.
 - Built-in printer friendly view or create your own by overriding printPreview() method.
-- Change of namespace from yajra\Datatables to Yajra\Datatables.
+- Change of namespace from yajra\Datatables to Boparaiamrit\Datatables.
 - Deprecated of() method when using DataTable service.
 - Automatic registration of required 3rd party providers.
     - [Laravel Excel](https://github.com/Maatwebsite/Laravel-Excel)

@@ -1,14 +1,14 @@
 <?php
 
-use Yajra\Datatables\Datatables;
-use Yajra\Datatables\Html\Builder;
-use Yajra\Datatables\Request;
+use Boparaiamrit\Datatables\Datatables;
+use Boparaiamrit\Datatables\Html\Builder;
+use Boparaiamrit\Datatables\Request;
 use Mockery as m;
 
 function app($instance)
 {
     switch ($instance) {
-        case 'Yajra\Datatables\Html\Builder':
+        case 'Boparaiamrit\Datatables\Html\Builder':
             return new Builder(
                 m::mock('Illuminate\Contracts\Config\Repository'),
                 m::mock('Illuminate\Contracts\View\Factory'),

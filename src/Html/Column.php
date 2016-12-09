@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\Datatables\Html;
+namespace Boparaiamrit\Datatables\Html;
 
 use Illuminate\Support\Fluent;
 
 /**
  * Class Column.
  *
- * @package Yajra\Datatables\Html
+ * @package Boparaiamrit\Datatables\Html
  * @see     https://datatables.net/reference/option/ for possible columns option
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
