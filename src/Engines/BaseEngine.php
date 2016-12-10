@@ -209,7 +209,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     protected function isSmartSearch()
     {
-        return Config::get('datatables.search.smart', true);
+        return config('datatables.search.smart', true);
     }
 
     /**
@@ -219,7 +219,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     public function isWildcard()
     {
-        return Config::get('datatables.search.use_wildcards', false);
+        return config('datatables.search.use_wildcards', false);
     }
 
     /**
@@ -706,7 +706,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     public function isDebugging()
     {
-        return Config::get('app.debug', false);
+        return config('app.debug', false);
     }
 
     /**
@@ -745,7 +745,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     public function isCaseInsensitive()
     {
-        return Config::get('datatables.search.case_insensitive', false);
+        return config('datatables.search.case_insensitive', false);
     }
 
     /**
