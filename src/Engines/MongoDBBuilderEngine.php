@@ -4,7 +4,7 @@ namespace Boparaiamrit\Datatables\Engines;
 
 
 use Boparaiamrit\Datatables\Request;
-use Illuminate\Database\Query\Builder;
+use Jenssegers\Mongodb\Query\Builder;
 
 /**
  * Class MongoDBBuilderEngine

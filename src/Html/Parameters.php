@@ -2,6 +2,7 @@
 
 namespace Boparaiamrit\Datatables\Html;
 
+
 use Illuminate\Support\Fluent;
 
 /**
@@ -13,13 +14,13 @@ use Illuminate\Support\Fluent;
  */
 class Parameters extends Fluent
 {
-    /**
-     * @var array
-     */
-    protected $attributes = [
-        'serverSide' => true,
-        'processing' => true,
-        'ajax'       => '',
-        'columns'    => []
-    ];
+	/**
+	 * @var array
+	 */
+	protected $attributes = [
+		'serverSide' => true,
+		'processing' => true,
+		'ajax'       => '',
+		'columns'    => []
+	];
 }

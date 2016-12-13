@@ -107,7 +107,7 @@ class Datatables
 	 *
 	 * @param  mixed $builder
 	 *
-	 * @return MongoDBBuilderEngine
+	 * @return \Boparaiamrit\Datatables\Engines\MongoDBBuilderEngine
 	 */
 	public function usingMongoDBBuilder($builder)
 	{
