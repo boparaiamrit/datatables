@@ -5,6 +5,7 @@ namespace Boparaiamrit\Datatables;
 
 use Boparaiamrit\Datatables\Engines\CollectionEngine;
 use Boparaiamrit\Datatables\Engines\EloquentEngine;
+use Boparaiamrit\Datatables\Engines\MoluquentEngine;
 use Boparaiamrit\Datatables\Engines\MongoDBBuilderEngine;
 use Boparaiamrit\Datatables\Engines\QueryBuilderEngine;
 use Illuminate\Database\Query\Builder as QueryBuilder;
@@ -103,7 +104,7 @@ class Datatables
 	}
 	
 	/**
-	 * Datatables using Eloquent.
+	 * Datatables using MongoDBBuilderEngine.
 	 *
 	 * @param  mixed $builder
 	 *
@@ -112,6 +113,18 @@ class Datatables
 	public function usingMongoDBBuilder($builder)
 	{
 		return new MongoDBBuilderEngine($builder, $this->request);
+	}
+	
+	/**
+	 * Datatables using Moluquent.
+	 *
+	 * @param  mixed $builder
+	 *
+	 * @return \Boparaiamrit\Datatables\Engines\MoluquentEngine
+	 */
+	public function usingMoluquent($builder)
+	{
+		return new MoluquentEngine($builder, $this->request);
 	}
 	
 	/**

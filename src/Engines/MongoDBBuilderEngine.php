@@ -21,9 +21,6 @@ class MongoDBBuilderEngine extends QueryBuilderEngine
 	public function __construct(Builder $Builder, Request $request)
 	{
 		parent::__construct($Builder, $request);
-		
-		$this->query      = $Builder;
-		$this->query_type = 'builder';
 	}
 	
 	/**
