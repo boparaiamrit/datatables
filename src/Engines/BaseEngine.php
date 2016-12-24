@@ -175,6 +175,8 @@ abstract class BaseEngine implements DataTableEngineContract
 	 */
 	protected $orderCallback;
 	
+	protected $presenter = null;
+	
 	/**
 	 * Array of data to append on json response.
 	 *
@@ -558,6 +560,13 @@ abstract class BaseEngine implements DataTableEngineContract
 		return $this;
 	}
 	
+	public function setPresenter($presenter)
+	{
+		$this->presenter = $presenter;
+		
+		return $this;
+	}
+	
 	/**
 	 * Set fractal serializer class.
 	 *
@@ -666,6 +675,7 @@ abstract class BaseEngine implements DataTableEngineContract
 			$reflection = new \ReflectionMethod($this->transformer, 'transform');
 			$parameter  = $reflection->getParameters()[0];
 			
+			
 			//If parameter is class assuming it requires object
 			//Else just pass array by default
 			if ($parameter->getClass()) {
@@ -681,6 +691,17 @@ abstract class BaseEngine implements DataTableEngineContract
 			$output['data'] = $collection['data'];
 		} else {
 			$output['data'] = Helper::transform($this->getProcessedData($object));
+			
+			if ($this->presenter) {
+				$Presenter = $this->presenter;
+				if (!is_object($Presenter)) {
+					$Presenter = new $Presenter;
+				}
+				
+				foreach ($output['data'] as &$datum) {
+					$datum = $Presenter->transform($datum);
+				}
+			}
 		}
 		
 		if ($this->isDebugging()) {
