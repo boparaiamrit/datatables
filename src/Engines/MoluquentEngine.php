@@ -14,20 +14,20 @@ use Jenssegers\Mongodb\Eloquent\Builder;
  */
 class MoluquentEngine extends MongoDBBuilderEngine
 {
-	/**
-	 * @param mixed                            $Model
-	 * @param \Boparaiamrit\Datatables\Request $request
-	 */
-	public function __construct($Model, Request $request)
-	{
-		/** @var Builder $Builder */
-		$Builder = $Model instanceof Builder ? $Model : $Model->getQuery();
-		
-		/** @var \Jenssegers\Mongodb\Query\Builder $QueryBuilder */
-		$QueryBuilder = $Builder->getQuery();
-		parent::__construct($QueryBuilder, $request);
-		
-		$this->query      = $Builder;
-		$this->query_type = 'moluquent';
-	}
+    /**
+     * @param mixed                            $Model
+     * @param \Boparaiamrit\Datatables\Request $request
+     */
+    public function __construct($Model, Request $request)
+    {
+        /** @var Builder $Builder */
+        $Builder = $Model instanceof Builder ? $Model : $Model->getQuery();
+
+        /** @var \Jenssegers\Mongodb\Query\Builder $QueryBuilder */
+        $QueryBuilder = $Builder->getQuery();
+        parent::__construct($QueryBuilder, $request);
+
+        $this->query = $Builder;
+        $this->query_type = 'moluquent';
+    }
 }
